@@ -32,17 +32,16 @@ class App extends React.Component {
     window.addEventListener('resize', this.resize.bind(this), true);
   }
   componentDidMount() {
-    if (visibilityChangeEvent) { // 将页面的焦点变换写入store
+    if (visibilityChangeEvent) { // store
       document.addEventListener(visibilityChangeEvent, () => {
         states.focus(isFocus());
       }, false);
     }
 
     if (lastRecord) { // 读取记录
-      if (lastRecord.cur && !lastRecord.pause) { // 拿到上一次游戏的状态, 如果在游戏中且没有暂停, 游戏继续
+      if (lastRecord.cur && !lastRecord.pause) {
         const speedRun = this.props.speedRun;
-        let timeout = speeds[speedRun - 1] / 2; // 继续时, 给予当前下落速度一半的停留时间
-        // 停留时间不小于最快速的速度
+        let timeout = speeds[speedRun - 1] / 2;
         timeout = speedRun < speeds[speeds.length - 1] ? speeds[speeds.length - 1] : speedRun;
         states.auto(timeout);
       }
