@@ -32,7 +32,7 @@ class App extends React.Component {
     window.addEventListener('resize', this.resize.bind(this), true);
   }
   componentDidMount() {
-    if (visibilityChangeEvent) { // store
+    if (visibilityChangeEvent) {
       document.addEventListener(visibilityChangeEvent, () => {
         states.focus(isFocus());
       }, false);
