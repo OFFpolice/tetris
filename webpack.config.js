@@ -1,6 +1,6 @@
 var config = require('./w.config');
 
-// dev环境配置
+// dev
 module.exports = {
   devtool: config.devtool,
   entry: config.entry,
