@@ -1,126 +1,86 @@
 {
-  "lan": ["cn", "en", "fr", "fa"],
-  "default": "cn",
+  "lan": ["en", "ru"],
+  "default": "en",
   "data": {
     "title": {
-      "cn": "俄罗斯方块",
       "en": "T E T R I S",
-      "fr": "T E T R I S",
-      "fa": "خانه سازی"
+      "ru": "Т Е Т Р И С"
     },
     "github": {
-      "cn": "GitHub",
       "en": "GitHub",
-      "fr": "GitHub",
-      "fa": "گیت‌هاب"
+      "ru": "GitHub"
     },
     "linkTitle": {
-      "cn": "查看源代码",
       "en": "View data source",
-      "fr": "Afficher la source des données",
-      "fa": "مشاهده سورس پروژه"
+      "ru": "Посмотреть источник данных"
     },
     "QRCode":{
-      "cn": "二维码",
       "en": "QR code",
-      "fr": "QR code",
-      "fa": "کیوآر کد"
+      "ru": "QR код"
     },
     "titleCenter": {
-      "cn": "俄罗斯方块<br />TETRIS",
       "en": "TETRIS",
-      "fr": "TETRIS",
-      "fa": "خانه سازی"
+      "ru": "ТЕТРИС"
     },
     "point": {
-      "cn": "得分",
       "en": "Point",
-      "fr": "Score",
-      "fa": "امتیاز"
+      "ru": "Очки"
     },
     "highestScore": {
-      "cn": "最高分",
       "en": "Max",
-      "fr": "Max",
-      "fa": "حداکثر"
+      "ru": "Макс"
     },
     "lastRound": {
-      "cn": "上轮得分",
       "en": "Last Round",
-      "fr": "Dernier Tour",
-      "fa": "آخرین دور"
+      "ru": "Последний раунд"
     },
     "cleans": {
-      "cn": "消除行",
       "en": "Cleans",
-      "fr": "Lignes",
-      "fa": "پاک کرد"
+      "ru": "Линии"
     },
     "level": {
-      "cn": "级别",
       "en": "Level",
-      "fr": "Difficulté",
-      "fa": "سطح"
+      "ru": "Уровень"
     },
     "startLine": {
-      "cn": "起始行",
       "en": "Start Line",
-      "fr": "Ligne Départ",
-      "fa": "خط شروع"
+      "ru": "Стартовая линия"
     },
     "next": {
-      "cn": "下一个",
       "en": "Next",
-      "fr": "Prochain",
-      "fa": "بعدی"
+      "ru": "Следующий"
     },
     "pause": {
-      "cn": "暂停",
       "en": "Pause",
-      "fr": "Pause",
-      "fa": "مکث"
+      "ru": "Пауза"
     },
     "sound": {
-      "cn": "音效",
       "en": "Sound",
-      "fr": "Sonore",
-      "fa": "صدا"
+      "ru": "Звук"
     },
     "reset": {
-      "cn": "重玩",
       "en": "Reset",
-      "fr": "Réinitialiser",
-      "fa": "ریست"
+      "ru": "Сброс"
     },
     "rotation": {
-      "cn": "旋转",
       "en": "Rotation",
-      "fr": "Rotation",
-      "fa": "چرخش"
+      "ru": "Поворот"
     },
     "left": {
-      "cn": "左移",
       "en": "Left",
-      "fr": "Gauche",
-      "fa": "چپ"
+      "ru": "Влево"
     },
     "right": {
-      "cn": "右移",
       "en": "Right",
-      "fr": "Droite",
-      "fa": "راست"
+      "ru": "Вправо"
     },
     "down": {
-      "cn": "下移",
       "en": "Down",
-      "fr": "Bas",
-      "fa": "پایین"
+      "ru": "Вниз"
     },
     "drop": {
-      "cn": "掉落",
       "en": "Drop",
-      "fr": "Tomber",
-      "fa": "سقوط"
+      "ru": "Бросить"
     }
   }
 }
