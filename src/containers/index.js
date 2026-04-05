@@ -38,7 +38,7 @@ class App extends React.Component {
       }, false);
     }
 
-    if (lastRecord) { // 读取记录
+    if (lastRecord) {
       if (lastRecord.cur && !lastRecord.pause) {
         const speedRun = this.props.speedRun;
         let timeout = speeds[speedRun - 1] / 2;
