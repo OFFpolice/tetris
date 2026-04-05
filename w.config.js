@@ -8,16 +8,14 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 var version = require('./package.json').version;
 
 
-// 程序入口
 var entry =  __dirname + '/src/index.js';
 
-// 输出文件
 var output =  {
   filename: 'page/[name]/index.js',
   chunkFilename: 'chunk/[name].[chunkhash:5].chunk.js',
 };
 
-// 生成source-map追踪js错误
+// source-map
 var devtool = 'source-map';
 
 // eslint
@@ -39,7 +37,7 @@ var loaders = [
     },
     {
       test: /\.(?:png|jpg|gif)$/,
-      loader: 'url?limit=8192', //小于8k,内嵌;大于8k生成文件
+      loader: 'url?limit=8192',
     },
     {
       test: /\.less/,
@@ -53,15 +51,12 @@ var devPlugins =  [
     { from: './src/resource/music/music.mp3' },
     { from: './src/resource/css/loader.css' },
   ]),
-  // 热更新
   new webpack.HotModuleReplacementPlugin(),
-  // 允许错误不打断程序, 仅开发模式需要
   new webpack.NoErrorsPlugin(),
-  // 打开浏览器页面
   new OpenBrowserPlugin({
     url: 'http://127.0.0.1:8080/'
   }),
-  // css打包
+  // css
   new ExtractTextPlugin('css.css', {
     allChunks: true
   }),
@@ -69,26 +64,24 @@ var devPlugins =  [
 
 // production plugin
 var productionPlugins = [
-  // 定义生产环境
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': '"production"',
   }),
-  // 复制
   new CopyWebpackPlugin([
     { from: './src/resource/music/music.mp3' },
     { from: './src/resource/css/loader.css' },
   ]),
-  // HTML 模板
+  // HTML
   new HtmlWebpackPlugin({
     template: __dirname + '/server/index.tmpl.html'
   }),
-  // JS压缩
+  // JS
   new webpack.optimize.UglifyJsPlugin({
     compress: {
       warnings: false
     }}
   ),
-  // css打包
+  // css
   new ExtractTextPlugin('css-' + version + '.css', {
     allChunks: true
   }),
